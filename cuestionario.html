@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-    </style>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
     <!-- <link rel="stylesheet" href="form.css"> -->
     <title>Cuestionario</title>
 </head>
-<body class="bg-[#e5fbf6] font-['Poppins']">
+<body class="bg-[#e5fbf6] font-sans">
     <h1 class="text-center font-bold text-2xl my-6 text-[#e5fbf6] bg-[#161616] p-4">Responde las siguientes preguntas</h1>
-    <section class="container lg:max-w-[50%] text-center p-4 mx-auto my-6 grid  gap-4">
+    <section class="container lg:max-w-[50%] text-center p-4 mx-auto my-6 grid gap-4">
 
         <div class="bg-[#e5fbf6] p-8 text-left flex flex-col gap-4 rounded-xl">
             <h2 class="font-bold">1. ¿Prefieres actividades de aventura y estar en contacto con la naturaleza, o buscas más relajación en la playa y el sol?</h2>
@@ -22,7 +21,7 @@
                 <ul class="grid w-full gap-6 md:grid-cols-2">
                     <li>
                         <input type="radio" id="op1" name="op" value="hosting-small" class="hidden peer" required />
-                        <label for="op1" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
+                        <label for="op1" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Aventura</div>
                                 <!-- <div class="w-full text-xs">Escala escalando!</div> -->
@@ -31,7 +30,7 @@
                     </li>
                     <li>
                         <input type="radio" id="op2" name="op" value="hosting-big" class="hidden peer">
-                        <label for="op2" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
+                        <label for="op2" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Relajacion</div>
                                 <!-- <div class="w-full text-xs">Relajate relajandote</div> -->
@@ -49,7 +48,7 @@
                 <ul class="grid w-full gap-6 md:grid-cols-2">
                     <li>
                         <input type="radio" id="op3" name="op" value="hosting-small" class="hidden peer" required />
-                        <label for="op3" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
+                        <label for="op3" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Cultura</div>
                                 <!-- <div class="w-full text-xs">Culturizate!!</div> -->
@@ -58,7 +57,7 @@
                     </li>
                     <li>
                         <input type="radio" id="op4" name="op" value="hosting-big" class="hidden peer">
-                        <label for="op4" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
+                        <label for="op4" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Naturaleza</div>
                                 <!-- <div class="w-full text-xs">Bla bla bla</div> -->
@@ -75,7 +74,7 @@
                 <ul class="grid w-full gap-6 md:grid-cols-2">
                     <li>
                         <input type="radio" id="op5" name="op" value="hosting-small" class="hidden peer" required />
-                        <label for="op5" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
+                        <label for="op5" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Montañas</div>
                                 <!-- <div class="w-full text-xs">Escala escalando!</div> -->
@@ -84,7 +83,7 @@
                     </li>
                     <li>
                         <input type="radio" id="op6" name="op" value="hosting-big" class="hidden peer">
-                        <label for="op6" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
+                        <label for="op6" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Playas</div>
                                 <!-- <div class="w-full text-xs">Relajate relajandote</div> -->
@@ -101,7 +100,7 @@
                 <ul class="grid w-full gap-6 md:grid-cols-2">
                     <li>
                         <input type="radio" id="op7" name="op" value="hosting-small" class="hidden peer" required />
-                        <label for="op7" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
+                        <label for="op7" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Económico</div>
                                 <!-- <div class="w-full text-xs">Escala escalando!</div> -->
@@ -110,7 +109,7 @@
                     </li>
                     <li>
                         <input type="radio" id="op8" name="op" value="hosting-big" class="hidden peer">
-                        <label for="op8" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
+                        <label for="op8" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Alto</div>
                                 <!-- <div class="w-full text-xs">Relajate relajandote</div> -->
@@ -127,7 +126,7 @@
                 <ul class="grid w-full gap-6 md:grid-cols-2">
                     <li>
                         <input type="radio" id="op9" name="op" value="hosting-small" class="hidden peer" required />
-                        <label for="op9" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
+                        <label for="op9" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Senderismo</div>
                                 <!-- <div class="w-full text-xs">Escala escalando!</div> -->
@@ -136,7 +135,7 @@
                     </li>
                     <li>
                         <input type="radio" id="op10" name="op" value="hosting-big" class="hidden peer">
-                        <label for="op10" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
+                        <label for="op10" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Deportes Acuáticos</div>
                                 <!-- <div class="w-full text-xs">Relajate relajandote</div> -->
@@ -153,7 +152,7 @@
                 <ul class="grid w-full gap-6 md:grid-cols-2">
                     <li>
                         <input type="radio" id="op11" name="op" value="hosting-small" class="hidden peer" required />
-                        <label for="op11" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
+                        <label for="op11" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Conectar con la naturaleza</div>
                                 <!-- <div class="w-full text-xs">Escala escalando!</div> -->
@@ -162,7 +161,7 @@
                     </li>
                     <li>
                         <input type="radio" id="op12" name="op" value="hosting-big" class="hidden peer">
-                        <label for="op12" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
+                        <label for="op12" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Pasar un buen rato en un entorno paradisiaco</div>
                                 <!-- <div class="w-full text-xs">Relajate relajandote</div> -->
