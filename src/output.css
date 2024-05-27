@@ -722,6 +722,14 @@ video {
   height: 66%;
 }
 
+.h-\[60vh\] {
+  height: 60vh;
+}
+
+.h-\[75vh\] {
+  height: 75vh;
+}
+
 .w-2\/4 {
   width: 50%;
 }
