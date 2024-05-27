@@ -5,33 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="form.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <!-- <link rel="stylesheet" href="form.css"> -->
     <title>Cuestionario</title>
 </head>
-<body class="bg-[#F1FADA]">
-    <section class="container w-2/4">
-        <h1 class="font-bold">Responde las siguientes preguntas</h1>
+<body class="bg-[#e5fbf6] font-['Poppins']">
+    <h1 class="text-center font-bold text-2xl my-6 text-[#e5fbf6] bg-[#161616] p-4">Responde las siguientes preguntas</h1>
+    <section class="container lg:max-w-[50%] text-center p-4 mx-auto my-6 grid  gap-4">
 
-        <div class="pregunta py-8 px-16">
-            <h2 class="font-bold">¿Prefieres actividades de aventura y estar en contacto con la naturaleza, o buscas más relajación en la playa y el sol?</h2>
+        <div class="bg-[#e5fbf6] p-8 text-left flex flex-col gap-4 rounded-xl">
+            <h2 class="font-bold">1. ¿Prefieres actividades de aventura y estar en contacto con la naturaleza, o buscas más relajación en la playa y el sol?</h2>
             <form action="">
                 
                 <ul class="grid w-full gap-6 md:grid-cols-2">
                     <li>
                         <input type="radio" id="op1" name="op" value="hosting-small" class="hidden peer" required />
-                        <label for="op1" class="inline-flex items-center justify-between w-full p-5 text-[#fff] bg-[#2D9596] rounded-lg cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-[#000] hover:bg-[#E1AFD1]">                           
+                        <label for="op1" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Aventura</div>
-                                <div class="w-full text-xs">Escala escalando!</div>
+                                <!-- <div class="w-full text-xs">Escala escalando!</div> -->
                             </div>
                         </label>
                     </li>
                     <li>
                         <input type="radio" id="op2" name="op" value="hosting-big" class="hidden peer">
-                        <label for="op2" class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white rounded-lg cursor-pointer peer-checked:border-blue-600 peer-checked:text-blue-600 hover:text-gray-600 hover:bg-gray-100">
+                        <label for="op2" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
                             <div class="block">
                                 <div class="w-full text-sm font-semibold">Relajacion</div>
-                                <div class="w-full text-xs">Relajate relajandote</div>
+                                <!-- <div class="w-full text-xs">Relajate relajandote</div> -->
                             </div>
                         </label>
                     </li>
@@ -40,82 +43,149 @@
             </form>
         </div>
 
-        <div class="pregunta">
-            <h2>¿Te gusta explorar la cultura, el arte y la historia de un lugar, o prefieres estar en contacto con la naturaleza y la vida silvestre?</h2>
+        <div class="bg-[#e5fbf6] p-8 text-left flex flex-col gap-4 rounded-xl">
+            <h2 class="font-bold">2. ¿Te gusta explorar la cultura, el arte y la historia de un lugar, o prefieres estar en contacto con la naturaleza y la vida silvestre?</h2>
             <form action="">
-                <label for="op3"><input type="radio" name="op" id="op3">Cultura</label>
-                
-                <label for="op4"><input type="radio" name="op" id="op4">Naturaleza</label>
+                <ul class="grid w-full gap-6 md:grid-cols-2">
+                    <li>
+                        <input type="radio" id="op3" name="op" value="hosting-small" class="hidden peer" required />
+                        <label for="op3" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
+                            <div class="block">
+                                <div class="w-full text-sm font-semibold">Cultura</div>
+                                <!-- <div class="w-full text-xs">Culturizate!!</div> -->
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="op4" name="op" value="hosting-big" class="hidden peer">
+                        <label for="op4" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
+                            <div class="block">
+                                <div class="w-full text-sm font-semibold">Naturaleza</div>
+                                <!-- <div class="w-full text-xs">Bla bla bla</div> -->
+                            </div>
+                        </label>
+                    </li>
+                </ul>
             </form>
         </div>
 
-        <div class="pregunta">
-            <h2>¿Qué tipo de entorno prefieres para tus vacaciones?</h2>
+        <div class="bg-[#e5fbf6] p-8 text-left flex flex-col gap-4 rounded-xl">
+            <h2 class="font-bold">3. ¿Qué tipo de entorno prefieres para tus vacaciones?</h2>
             <form action="">
-                <label for="op5"><input type="radio" name="op" id="op5">Montañas</label>
-                
-                <label for="op6"><input type="radio" name="op" id="op6">Playas</label>
+                <ul class="grid w-full gap-6 md:grid-cols-2">
+                    <li>
+                        <input type="radio" id="op5" name="op" value="hosting-small" class="hidden peer" required />
+                        <label for="op5" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
+                            <div class="block">
+                                <div class="w-full text-sm font-semibold">Montañas</div>
+                                <!-- <div class="w-full text-xs">Escala escalando!</div> -->
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="op6" name="op" value="hosting-big" class="hidden peer">
+                        <label for="op6" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
+                            <div class="block">
+                                <div class="w-full text-sm font-semibold">Playas</div>
+                                <!-- <div class="w-full text-xs">Relajate relajandote</div> -->
+                            </div>
+                        </label>
+                    </li>
+                </ul>
             </form>
         </div>
 
-        <div class="pregunta">
-            <h2>¿En qué rango de presupuesto te encuentras?</h2>
+        <div class="bg-[#e5fbf6] p-8 text-left flex flex-col gap-4 rounded-xl">
+            <h2 class="font-bold">4. ¿En qué rango de presupuesto te encuentras?</h2>
             <form action="">
-                <label for="op7"><input type="radio" name="op" id="op7">Economico</label>
-                
-                <label for="op8"><input type="radio" name="op" id="op8">Alto</label>
+                <ul class="grid w-full gap-6 md:grid-cols-2">
+                    <li>
+                        <input type="radio" id="op7" name="op" value="hosting-small" class="hidden peer" required />
+                        <label for="op7" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
+                            <div class="block">
+                                <div class="w-full text-sm font-semibold">Económico</div>
+                                <!-- <div class="w-full text-xs">Escala escalando!</div> -->
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="op8" name="op" value="hosting-big" class="hidden peer">
+                        <label for="op8" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
+                            <div class="block">
+                                <div class="w-full text-sm font-semibold">Alto</div>
+                                <!-- <div class="w-full text-xs">Relajate relajandote</div> -->
+                            </div>
+                        </label>
+                    </li>
+                </ul>
             </form>
         </div>
 
-        <div class="pregunta">
-            <h2>¿Qué tipo de actividades te interesan más durante el viaje?</h2>
+        <div class="bg-[#e5fbf6] p-8 text-left flex flex-col gap-4 rounded-xl">
+            <h2 class="font-bold">5. ¿Qué tipo de actividades te interesan más durante el viaje?</h2>
             <form action="">
-                <label for="op9"><input type="radio" name="op" id="op9">Senderismo</label>
-                
-                <label for="op10"><input type="radio" name="op" id="op10">Deportes Acuaticos</label>
+                <ul class="grid w-full gap-6 md:grid-cols-2">
+                    <li>
+                        <input type="radio" id="op9" name="op" value="hosting-small" class="hidden peer" required />
+                        <label for="op9" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
+                            <div class="block">
+                                <div class="w-full text-sm font-semibold">Senderismo</div>
+                                <!-- <div class="w-full text-xs">Escala escalando!</div> -->
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="op10" name="op" value="hosting-big" class="hidden peer">
+                        <label for="op10" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
+                            <div class="block">
+                                <div class="w-full text-sm font-semibold">Deportes Acuáticos</div>
+                                <!-- <div class="w-full text-xs">Relajate relajandote</div> -->
+                            </div>
+                        </label>
+                    </li>
+                </ul>
             </form>
         </div>
 
-        <div class="pregunta">
-            <h2>¿Cuál es tu principal objetivo para este viaje?</h2>
+        <div class="bg-[#e5fbf6] p-8 text-left flex flex-col gap-4 rounded-xl">
+            <h2 class="font-bold">6. ¿Cuál es tu principal objetivo para este viaje?</h2>
             <form action="">
-                <label for="op11"><input type="radio" name="op" id="op11">Conectar con la naturaleza</label>
-                
-                <label for="op12"><input type="radio" name="op" id="op12">Pasar un buen rato en un entorno paradisiaco</label>
+                <ul class="grid w-full gap-6 md:grid-cols-2">
+                    <li>
+                        <input type="radio" id="op11" name="op" value="hosting-small" class="hidden peer" required />
+                        <label for="op11" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">                           
+                            <div class="block">
+                                <div class="w-full text-sm font-semibold">Conectar con la naturaleza</div>
+                                <!-- <div class="w-full text-xs">Escala escalando!</div> -->
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="op12" name="op" value="hosting-big" class="hidden peer">
+                        <label for="op12" class="inline-flex items-center justify-between w-full p-5 text-[#e5fbf6] bg-[#161616] rounded-lg cursor-pointer border border-2 border-[#161616] peer-checked:border-blue-600 peer-checked:bg-cyan-950 hover:bg-cyan-950">
+                            <div class="block">
+                                <div class="w-full text-sm font-semibold">Pasar un buen rato en un entorno paradisiaco</div>
+                                <!-- <div class="w-full text-xs">Relajate relajandote</div> -->
+                            </div>
+                        </label>
+                    </li>
+                </ul>
             </form>
         </div>
 
-        <a href="#" id="generarRespuestas">Generar respuestas</a>
-
+        
     </section>
+    <div class="flex justify-center mb-6">
+        <button id="generarRespuestas" type="button" class="text-white bg-cyan-900 hover:bg-cyan-950 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center">
+            Generar respuestas
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </button>
+    </div>
     
     
-    <script>
-        // Función para capturar las opciones seleccionadas y redirigir a la página de recomendaciones
-        document.getElementById("generarRespuestas").addEventListener("click", function() {
-            // Capturar las opciones seleccionadas
-            var opciones = [];
-            var formularios = document.querySelectorAll("form");
-            formularios.forEach(function(formulario) {
-                var opcionSeleccionada = formulario.querySelector("input:checked");
-                if (opcionSeleccionada) {
-                    opciones.push(opcionSeleccionada.id);
-                }
-            });
-    
-            // Construir la URL con las opciones seleccionadas como parámetros
-            var url = "recomendaciones.html?";
-            opciones.forEach(function(opcion, index) {
-                if (index !== 0) {
-                    url += "&";
-                }
-                url += "op" + (index + 1) + "=" + opcion;
-            });
-    
-            // Redirigir a la página de recomendaciones
-            window.location.href = url;
-        });
-    </script>
+    <script src="app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
 </body>

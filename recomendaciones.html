@@ -3,24 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
     <title>Recomendaciones de Viaje</title>
     <style>
         /* Estilos para las tarjetas */
-        *{
-            font-family: "Poppins", sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: cornflowerblue;
-        }
-        h1{
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-            color: midnightblue;
-        }
-        .card {
+        
+        
+        /* .card {
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -55,9 +48,9 @@
 
         .card p {
             margin-bottom: 0;
-        }
+        } */
 
-        .reservar{
+        /* .reservar{
             border: none;
             outline: none;
             padding: 10px;
@@ -68,16 +61,17 @@
             background-color: #019dd1;
             margin-top: 15px;
             cursor: pointer;
-        }
+        } */
     </style>
 </head>
-<body>
-    <h1>Recomendaciones de Viaje</h1>
+<body class="font-['Poppins'] bg-[#e5fbf6]">
+    <h1 class="text-center font-bold text-2xl my-6 text-[#e5fbf6] bg-[#161616] p-4">Recomendaciones de Viaje</h1>
 
-    <div id="recommendationsContainer">
+    <div id="recommendationsContainer" class="grid md:grid-cols-2 xl:grid-cols-4 gap-4 m-6">
         <!-- Aquí se mostrarán las tarjetas de recomendaciones -->
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script>
         // Obtener las respuestas seleccionadas por el usuario de los parámetros de la URL
         var respuestas = [];
@@ -105,42 +99,48 @@
                 recomendaciones.push({ 
                     nombre: "Paquete Cultural en la Ciudad de Caracas",
                     imagen: "img/parque-caracas.jpg",
-                    descripcion: "Este paquete ofrece una inmersión en la rica cultura de la ciudad de Caracas. Incluye visitas a museos, galerías de arte, teatros y lugares históricos como el Ávila y el Panteón Nacional. Los viajeros también tendrán la oportunidad de probar la gastronomía local y disfrutar de la vida nocturna de la ciudad."
+                    descripcion: "Este paquete ofrece una inmersión en la rica cultura de la ciudad de Caracas. Incluye visitas a museos, galerías de arte, teatros y lugares históricos como el Ávila y el Panteón Nacional. Los viajeros también tendrán la oportunidad de probar la gastronomía local y disfrutar de la vida nocturna de la ciudad.",
+                    tags:["Económico","Cultura"],
                 });
             }
             if (respuestas.includes('op2') || respuestas.includes('op12') || respuestas.includes('op6')) {
                 recomendaciones.push({
                     nombre: "Paquete de Naturaleza en el Archipiélago de Los Roques",
                     imagen: "img/roques.webp",
-                    descripcion: "Este paquete ofrece una experiencia única en el hermoso Archipiélago de Los Roques. Incluye estadía en posadas tradicionales, snorkel en arrecifes de coral, avistamiento de aves y navegación por las islas. Los viajeros podrán disfrutar de playas vírgenes, aguas cristalinas y una gran variedad de vida marina."
+                    descripcion: "Este paquete ofrece una experiencia única en el hermoso Archipiélago de Los Roques. Incluye estadía en posadas tradicionales, snorkel en arrecifes de coral, avistamiento de aves y navegación por las islas. Los viajeros podrán disfrutar de playas vírgenes, aguas cristalinas y una gran variedad de vida marina.",
+                    tags:["Relajacion","Playas"],
                 });
             }
             if (respuestas.includes('op2') || respuestas.includes('op6') || respuestas.includes('op10')) {
                 recomendaciones.push({
                     nombre: "Paquete de Relajación en las Playas de Margarita",
                     imagen: "img/margarita.jpeg",
-                    descripcion: "Este paquete está diseñado para aquellos que buscan relajarse y disfrutar del sol y la playa. Incluye alojamiento en resorts frente al mar en la hermosa isla de Margarita, acceso a playas de arena blanca y aguas cristalinas, y actividades como buceo, snorkel y paseos en bote."
+                    descripcion: "Este paquete está diseñado para aquellos que buscan relajarse y disfrutar del sol y la playa. Incluye alojamiento en resorts frente al mar en la hermosa isla de Margarita, acceso a playas de arena blanca y aguas cristalinas, y actividades como buceo, snorkel y paseos en bote.",
+                    tags:["Relajación","Deportes"],
                 });
             }
             if (respuestas.includes('op1') || respuestas.includes('op5') || respuestas.includes('op11')) {
                 recomendaciones.push({
                     nombre: "Paquete de Aventura en los Andes Venezolanos",
                     imagen: "img/andes.jpeg",
-                    descripcion: "Este paquete ofrece una experiencia emocionante en las majestuosas montañas de los Andes venezolanos. Incluye excursiones de senderismo, escalada en roca y avistamiento de aves en el Parque Nacional Sierra Nevada. Los viajeros podrán disfrutar de paisajes impresionantes, cascadas y la rica biodiversidad de la región."
+                    descripcion: "Este paquete ofrece una experiencia emocionante en las majestuosas montañas de los Andes venezolanos. Incluye excursiones de senderismo, escalada en roca y avistamiento de aves en el Parque Nacional Sierra Nevada. Los viajeros podrán disfrutar de paisajes impresionantes, cascadas y la rica biodiversidad de la región.",
+                    tags:["Aventura","Montañas"],
                 });
             }
             if (respuestas.includes('op4') || respuestas.includes('op5') || respuestas.includes('op7')) {
                 recomendaciones.push({
                     nombre: "Paquete de Aventura en el Parque Nacional Canaima",
                     imagen: "img/canaima.jpg",
-                    descripcion: "Este paquete está destinado a los amantes de la naturaleza y la aventura. Incluye un viaje al impresionante Parque Nacional Canaima, donde los viajeros podrán maravillarse con los famosos tepuyes, como el Monte Roraima, realizar caminatas por la selva, visitar las cascadas de Salto Ángel y realizar paseos en canoa por los ríos de la región."
+                    descripcion: "Este paquete está destinado a los amantes de la naturaleza y la aventura. Incluye un viaje al impresionante Parque Nacional Canaima, donde los viajeros podrán maravillarse con los famosos tepuyes, como el Monte Roraima, realizar caminatas por la selva, visitar las cascadas de Salto Ángel y realizar paseos en canoa por los ríos de la región.",
+                    tags:["Naturaleza","Económico"],
                 });
             }
             if (respuestas.includes('op3') || respuestas.includes('op7') || respuestas.includes('op9')) {
                 recomendaciones.push({
                     nombre: "Paquete Histórico en la Ciudad de Coro",
                     imagen: "img/coro.jpg",
-                    descripcion: "Este paquete invita a los viajeros a explorar la ciudad de Coro, declarada Patrimonio de la Humanidad por la UNESCO. Incluye visitas a la Catedral de Santa Ana, el Casco Histórico, el Museo de Arte Colonial y a las dunas del Parque Nacional Médanos de Coro. Los turistas también podrán disfrutar de la gastronomía local y aprender sobre la historia de la región."
+                    descripcion: "Este paquete invita a los viajeros a explorar la ciudad de Coro, declarada Patrimonio de la Humanidad por la UNESCO. Incluye visitas a la Catedral de Santa Ana, el Casco Histórico, el Museo de Arte Colonial y a las dunas del Parque Nacional Médanos de Coro. Los turistas también podrán disfrutar de la gastronomía local y aprender sobre la historia de la región.",
+                    tags:["Cultura","Senderismo"],
                 });
             }
 
@@ -148,13 +148,30 @@
             var container = document.getElementById('recommendationsContainer');
             recomendaciones.forEach(function(recomendacion) {
                 var card = document.createElement('div');
-                card.className = 'card';
-                card.innerHTML = '<img src="' + recomendacion.imagen + '" alt="' + recomendacion.nombre + '">' +
-                                  '<div class="card-content">' +
-                                  '<h2>' + recomendacion.nombre + '</h2>' +
-                                  '<p>' + recomendacion.descripcion + '</p>' +
-                                  '<a href="reservacion.html"><button class="reservar">Reservar</button></a>' +
-                                  '</div>';
+                card.className = '';
+                card.innerHTML = `
+                <div class=" border-[#161616] rounded-lg h-fit  ">
+                    <a href="reservacion.html">
+                        <img class="rounded-lg" src="${recomendacion.imagen}" alt="${recomendacion.nombre}" />
+                    </a>
+                    <div class="p-5">
+                        <div class="my-4 flex gap-2 font-semibold text-sm text-[#161616]">
+                            <span class="bg-blue-300 rounded-full p-2 px-4">${recomendacion.tags[0]}</span>
+                            <span class="bg-orange-300 rounded-full p-2 px-4">${recomendacion.tags[1]}</span>
+                        </div>
+                        <a href="#">
+                            <h5 class="mb-2 font-bold tracking-tight text-[#161616]">${recomendacion.nombre}</h5>
+                        </a>
+                        <p class="mb-3 text-gray-800 font-medium">${recomendacion.descripcion}</p>
+                        <a href="reservacion.html" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#e5fbf6] bg-[#161616] rounded-lg hover:bg-cyan-950 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                            Reservar
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                `
                 container.appendChild(card);
             });
         }
